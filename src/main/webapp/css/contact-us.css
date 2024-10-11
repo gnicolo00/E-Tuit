@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Abdul Ahad Mohmand";
+    src: url("../fonts/AGT_Abdul_Ahad_Mohmand.otf") format("opentype");
+}
+
+#login-or-register-container {
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+#login-button-contact {
+    border: 1px solid white;
+    background-color: inherit;
+}
+
+#login-or-register-container button {
+    font-size: 25px;
+    border-radius: 30px;
+    margin: 1% 1.25%;
+    width: 10%;
+    height: 7%;
+}
+
+#login-or-register {
+    font-weight: bolder;
+}
+
+h1 {
+    font-family: Bahnschrift, serif;
+    margin-bottom: 0;
+}
+
+#ticket-message {
+    font-family: Bahnschrift, serif;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 1%;
+}
+
+#ticket-container {
+    margin: 7.5% auto auto;
+    width: 45%;
+}
+
+.info-title {
+    font-family: Abdul Ahad Mohmand, sans-serif;
+    font-size: 15px;
+    color: #BBBEAB;
+}
+
+#details {
+    text-align: left;
+}
+
+.ticket-sub-container {
+    margin: 5% auto;
+    width: 55%;
+    text-align: left;
+}
+
+.text-container {
+    background-color: #3E3E3E;
+    font-family: Bahnschrift, serif;
+    font-size: 16px;
+    color: white;
+    display: block;
+    padding: 2.5%;
+    width: 100%;
+    border: 2px solid #686868;
+    border-radius: 0;
+}
+
+.text-container:focus {
+    outline: none;
+}
+
+/* File Drop */
+#file-drop-container {
+    width: 55%;
+    margin: auto;
+    text-align: left;
+}
+
+#file-drop-area {
+    border: 1px dashed #CCCC;
+    border-radius: 0;
+    margin: auto;
+    text-align: center;
+    display: block;
+    padding: 4%;
+    width: 92%;
+}
+
+#file-drop {
+    display: none;
+}
+
+#file-drop-area label {
+    cursor: pointer;
+}
+
+#file-drop-area span {
+    display: block;
+}
+/*-----------*/
+
+#send-request-button {
+    font-family: Bahnschrift, serif;
+    font-size: 16px;
+    margin-top: 5%;
+    width: 20%;
+    border-radius: 0;
+}
+

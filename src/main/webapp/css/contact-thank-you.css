@@ -1,0 +1,16 @@
+body {
+    font-family: Bahnschrift, sans-serif;
+}
+
+#thank-you {
+    margin-top: 10%;
+}
+
+#thank-you span {
+    color: #8c49fc;
+}
+
+#thank-you form {
+    display: inline-block;
+    margin: 1%;
+}

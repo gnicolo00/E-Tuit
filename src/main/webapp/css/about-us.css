@@ -1,0 +1,31 @@
+body {
+    background-image: url("../img/about-us-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about-us-container {
+    font-family: Bahnschrift, sans-serif;
+    margin: 5% 25% auto auto;
+    font-size: 17px;
+    width: 50%;
+    text-align: left;
+}
+
+#about-us-container img {
+    width: 20%;
+}
+
+#about-us-container h1 {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#about-us-container p {
+    margin: 3% 0;
+}
+
+#info {
+    font-weight: bolder;
+    font-size: 19px;
+}

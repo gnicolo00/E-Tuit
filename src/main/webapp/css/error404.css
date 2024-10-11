@@ -1,0 +1,39 @@
+body {
+    background-image: url("../img/error404-background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 100%;
+    overflow-y: hidden;
+}
+
+#error404-container {
+    font-family: Bahnschrift, sans-serif;
+    margin: 12.5% 25% auto auto;
+    font-size: 25px;
+    width: 50%;
+    text-align: left;
+}
+
+#error404-container h1 {
+    font-size: 75px;
+    margin-bottom: 0;
+}
+
+#error-type {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #d9d9d9;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#error-message {
+    font-size: 35px;
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: #8c49fc;
+    font-size: 25px;
+    margin-top: 2.5%;
+}

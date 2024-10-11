@@ -1,0 +1,52 @@
+body {
+    font-family: Bahnschrift, sans-serif;
+    background-color: #2c2c2c;
+}
+
+.wrap {
+    max-width: 35%;
+    margin: 5% auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+a {
+    color: #8c49fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b68cff;
+}
+
+p {
+    font-size: 18px;
+    margin: 3% 0;
+}
+
+.section {
+    margin: 48px 0;
+}
+
+.subSection {
+    margin: 32px 0;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 48px;
+    margin: 64px 0 16px;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 14px;
+    text-align: left;
+}
+
+.mainTitle, .subTitle {
+    font-size: 30px;
+    font-weight: bolder;
+}
+

@@ -1,0 +1,261 @@
+.tutorpage-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    height: 85vh;
+    overflow-x: hidden; /* Nasconde lo scroll orizzontale */
+}
+
+.card {
+    flex: 0 0 20%; /* Imposta la larghezza fissa */
+    height: 550px;
+    margin: 2.5% 5% 5% 12%;
+}
+
+.card-image {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%)
+}
+
+.card-content {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h3 {
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 0;
+}
+
+.average-rating {
+    padding: 10px;
+    margin-left: 0;
+}
+
+.tutoring-hours {
+    font-family: Bahnschrift, sans-serif;
+    font-weight: lighter;
+    color: #d9d9d9;
+    margin: 0;
+}
+
+.card-content hr {
+    width: 70%;
+}
+
+.hourly-rate-page {
+    font-family: Bahnschrift, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 2.5%;
+}
+
+#book-lesson-button {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 4%;
+    width: 80%;
+}
+
+#book-lesson-container {
+    position: absolute;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #2c2c2c, #4c4c4c);
+    flex: 0 0 20%; /* Imposta la larghezza fissa */
+    margin: 2.5% 5% 5% 12%;
+    width: 20%;
+    height: 0;/*sfrutta height per prenotare la lezione e annullare (0 - 550px)*/
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: left;
+    z-index: 1;
+}
+
+#book-lesson-form {
+    max-width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+#book-lesson-form h3 {
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#numOrePrenotate {
+    background-color: #3E3E3E;
+    font-family: Bahnschrift, serif;
+    color: white;
+    padding: 2%;
+    width: 30%;
+    border: 2px solid #686868;
+    border-radius: 0;
+}
+
+#numOrePrenotate:focus {
+    outline: none;
+}
+
+#book-lesson-container input[type="submit"] {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 5%;
+    width: 80%;
+}
+
+#cancel-booking {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 5%;
+    margin-left: 31%;
+}
+
+.tutor-info {
+    position: relative; /* Imposta la posizione relativa per posizionare il contenuto scrollabile correttamente */
+    background-image: linear-gradient(to left, #4c4c4c, #2c2c2c);
+    flex: 0 0 50%; /* Imposta la larghezza fissa */
+    padding: 0;
+    border-radius: 15px;
+    overflow-y: auto; /* Abilita lo scroll verticale */
+    text-align: left;
+}
+
+.tutor-info h1 {
+    font-size: 50px;
+}
+
+.tutor-info h2 {
+    font-size: 35px;
+    margin-top: 10%;
+}
+
+.tutor-info ul {
+    list-style-type: square;
+    font-size: 25px;
+    padding-left: 3%;
+    line-height: 45px;
+}
+
+.tutor-info p {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 40px;
+}
+
+.scrollable-content {
+    padding: 3% 10%;
+    overflow-y: auto;
+}
+
+
+@media only screen and (max-width: 576px){
+    .tutorpage-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card, .tutor-info {
+        width: 90%;
+        height: 100%;
+        margin: 10% auto 0;
+    }
+
+    .card-content {
+        position: relative;
+        top: 0;
+        margin-top: 25%;
+    }
+
+    .card-image {
+        margin-bottom: 20%;
+    }
+
+    #book-lesson-button, #book-lesson-container input[type="submit"] {
+        padding: 2%;
+        margin: 2% auto 2%;
+    }
+
+    #book-lesson-form {
+        margin-top: 10%;
+    }
+
+    #book-lesson-container input[type="submit"], #cancel-booking {
+        display: block;
+    }
+
+    #cancel-booking {
+        margin: 5% auto 0;
+    }
+
+    #book-lesson-container {
+        margin: 5% 5%;
+        width: 88%;
+        text-align: center;
+    }
+
+    #numOrePrenotate {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 577px) and (max-width: 900px){
+    .tutorpage-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card, .tutor-info {
+        width: 90%;
+        height: 100%;
+        margin: 10% auto 0;
+    }
+
+    .card-content {
+        position: relative;
+        top: 0;
+        margin-top: 10%;
+    }
+
+    .card-image {
+        margin-bottom: 10%;
+    }
+
+    #book-lesson-button, #book-lesson-container input[type="submit"] {
+        padding: 2%;
+        margin: 2% auto 0;
+        width: 40%;
+    }
+
+    #book-lesson-container input[type="submit"], #cancel-booking {
+        display: block;
+    }
+
+    #cancel-booking {
+        margin: 5% auto 0;
+    }
+
+    #book-lesson-container {
+        margin: 10% 5%;
+        width: 89%;
+        text-align: center;
+    }
+
+    #numOrePrenotate {
+        width: 30%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,160 @@
+#ticket-div {
+    display: block;
+}
+
+.table-wrapper {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container{
+    max-width: 100%;
+    overflow-x: scroll;
+    margin: 0 auto;
+}
+
+.user-admin-table {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    padding: 1%;
+}
+
+#banned-table {
+    color: red;
+}
+
+.change-button {
+    font-family: Bahnschrift, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.change-button:hover {
+    scale: 105%;
+    transition: 500ms;
+}
+
+.change-button:not(.change-button:hover) {
+    transition: 600ms;
+}
+
+.sban-button {
+    background-color: #f2f2f2;
+    color: red;
+}
+.ban-button {
+    background-color: red;
+    color: white;
+}
+.change-card-descr-button {
+    background-color: #8c49fc;
+    color: white;
+
+}
+.change-compl-descr-button {
+    background-color: #a977ff;
+    color: #2c2c2c;
+}
+.change-name-button {
+    background-color: #c2a4ff;
+    color: #2c2c2c;
+}
+.see-tutorpage-button {
+    background-color: #ddccff;
+    color: #2c2c2c;
+}
+
+
+.tickets-container {
+    border: 1px solid transparent;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Responsive columns */
+    grid-template-rows: auto;
+    grid-gap: 5%; /* Adds a 10px gap between grid items */
+}
+
+.ticket-card {
+    font-size: 16px;
+    padding: 3%;
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+    border-radius: 5%;
+    overflow: hidden;
+    word-wrap: break-word;
+    background: linear-gradient(transparent, rgba(60,60,60,0.2)) padding-box, linear-gradient(to top, transparent, rgba(140, 73, 252, 0.2)) border-box;
+    border-color: #befcff;
+}
+
+.table-header, .ticket-id {
+    font-size: 150%
+}
+
+.ticket-id {
+    color: #8c49fc;
+}
+
+#admin-container {
+    margin: 5%;
+    text-align: center;
+}
+
+a , a:visited, a:active{
+    color: white;
+    text-decoration: none;
+}
+
+#info-container {
+    overflow: hidden;
+    word-wrap: break-word;
+    margin-top: 100px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #befcff , #8c49fc) 1;
+}
+
+#website-info {
+    color: #8c49fc;
+}
+
+.info-website div:nth-child(even) {
+    color: #befcff;
+}
+
+.info-website span:nth-child(odd) {
+    color: #8c49fc;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .tickets-container {
+        grid-template-columns: repeat(3, 1fr); /* Responsive columns */
+    }
+    #info-container {
+        margin: 200px auto 50px;
+    }
+    #admin-container {
+        margin: 130px 30px 50px 30px;
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .tickets-container {
+        grid-template-columns: 1fr; /* Responsive columns */
+    }
+    #info-container {
+        margin: 700px auto 30px;
+    }
+    #admin-container {
+        margin: 250px 30px 80px 30px;
+        font-size: 15px;
+    }
+}
